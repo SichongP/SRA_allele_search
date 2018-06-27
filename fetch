@@ -60,7 +60,7 @@ except IOError as e:
 		print("Error: Permission denied when trying to write to output")
 		exit(1)
 	raise Exception("Failed to open file")
-out.write(',,' + 'ref,' + ','.join(file_list) + '\n')
+out.write('chr,pos,ref,' + ','.join(file_list) + '\n')
 for identifier in dict:
 	out.write(identifier + ',' + refs[identifier])
 	for file in file_list:
