@@ -1,11 +1,12 @@
+#!/usr/bin/python
 import os
 import os.path
 import argparse
 from datetime import date
-from collections import defaultdict
 import subprocess
+from bin import read_pileup
 wd = os.path.dirname(os.path.realpath(__file__))
-sra = wd + "/sra-pileup.2.9.1"
+sra = wd + "/bin/sra-pileup.2.9.1"
 parser = argparse.ArgumentParser(description = "Fetch pileup files from SRA for given accessions")
 #parser.add_argument('--user', type=argparse.FileType('r'), default=None)
 parser.add_argument('-r', default=None)
@@ -31,15 +32,38 @@ else:
 	delete_temp = True
 if a.f:
 #If a list of loci is provided
-	call = wd + "/SRA_Get_pileup_list"
+	call = wd + "/bin/SRA_Get_pileup_list"
 	subprocess.call([call, a.a, a.f, a.temp, sra])
 elif a.r:
 #If a list is not provided but a region is provided
-	call = wd + "/SRA_Get_pileup"
+	call = wd + "/bin/SRA_Get_pileup"
 	subprocess.call([call, a.a, a.r, a.temp, sra])
 else:
 #Neither a list or a region is provided, report error and exit
 	print("Error! Either a region or a list of regions must be provided! Want whole genomoe data? Simply download their fastq files using fastq-dump from sra tools")
 	exit(1)
-#Creat a 2D dictionary to store alleles in each sample across loci
-dict = defaultdict(dict)
+#Creating a 2D hash to store variant data
+dict = {}
+refs = {}
+file_list = []
+for (path, dirnames, files) in os.walk(a.temp):
+	for file in files:
+		file_list.append(file)
+		read_pileup.read_file(path, file, dict, refs)
+	break
+print(dict)
+print(file_list)
+try:
+	out = open(a.out, 'w')
+except IOError as e:
+	if e.errno == errno.EACCES:
+		print("Error: Permission denied when trying to write to output")
+		exit(1)
+	raise Exception("Failed to open file")
+out.write(',,' + 'ref,' + ','.join(file_list) + '\n')
+for identifier in dict:
+	out.write(identifier + ',' + refs[identifier])
+	for file in file_list:
+		out.write(',' + dict[identifier][file])
+	out.write('\n')
+
