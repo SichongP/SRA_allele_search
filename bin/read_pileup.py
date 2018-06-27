@@ -38,16 +38,16 @@ def read_file(root, filename, varianthash, refhash):
 				sys.exit(0)
 			alt_ratio=1-float(match)/float(depth)
 			if alt_ratio<0.3:
-				varianthash[identifier][filename]=ref+'|'+ref
+				varianthash[identifier][filename]="."
 			elif alt_ratio>0.7:
 				if float(a)>0:
-					varianthash[identifier][filename]='A|A'
+					varianthash[identifier][filename]='AA'
 				elif float(c)>0:
-					varianthash[identifier][filename]='C|C'
+					varianthash[identifier][filename]='CC'
 				elif float(g)>0:
-					varianthash[identifier][filename]='G|G'
+					varianthash[identifier][filename]='GG'
 				elif float(t)>0:
-					varianthash[identifier][filename]='T|T'
+					varianthash[identifier][filename]='TT'
 				elif not ins:
 					ins=re.sub('[0-9]-','',ins)
 					varianthash[identifier][filename]='I-'+ins+'|'+ins
@@ -56,13 +56,13 @@ def read_file(root, filename, varianthash, refhash):
 					varianthash[identifier][filename]='D-'+dele+'|'+dele
 			else:
 				if float(a)>0:
-					varianthash[identifier][filename]=ref+'|A'
+					varianthash[identifier][filename]=ref+'A'
 				elif float(c)>0:
-					varianthash[identifier][filename]=ref+'|C'
+					varianthash[identifier][filename]=ref+'C'
 				elif float(g)>0:
-					varianthash[identifier][filename]=ref+'|G'
+					varianthash[identifier][filename]=ref+'G'
 				elif float(t)>0:
-					varianthash[identifier][filename]=ref+'|T'
+					varianthash[identifier][filename]=ref+'T'
 				elif not ins:
 					ins=re.sub('[0-9]-','',ins)
 					varianthash[identifier][filename]=ref+'|I-'+ins
