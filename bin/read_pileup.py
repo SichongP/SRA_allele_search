@@ -22,8 +22,8 @@ def read_file(root, filename, varianthash, refhash):
 	read data from a file and store into a hash
 	"""
 	for line in open(os.path.join(root, filename)):
-#		print(line)
-		chr, pos, ref, depth, match, a, c, g, t, ins, dele, something = line.strip().split('\t')
+		print(line)
+		chr, pos, ref, depth, match, a, c, g, t, ins, dele, something = line.strip().split('\t',11)
 		a=re.sub('-A','',a)
 		c=re.sub('-C','',c)
 		g=re.sub('-G','',g)
@@ -36,7 +36,10 @@ def read_file(root, filename, varianthash, refhash):
 			if filename in varianthash[identifier]:
 				print("encountered duplicate files: ", identifier)
 				sys.exit(0)
-			alt_ratio=1-float(match)/float(depth)
+			if match:
+				alt_ratio = 1-float(match)/float(depth)
+			else:
+				alt_ratio = 1
 			if alt_ratio<0.3:
 				varianthash[identifier][filename]="."
 			elif alt_ratio>0.7:
