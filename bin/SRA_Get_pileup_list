@@ -8,7 +8,7 @@ for ((i=1;i<${#sRARunId[@]};i++)); do
     printf "processing sample no.%s of %s\n" "$i" "$((${#sRARunId[@]} - 1))"
     for ((j=1;j<${#pOSITION[@]};j++)); do
    	 #printf "%s\n" "${pOSITION[j]}”
-   	 printf "  processing position no.%s of %s\n" "$j" "$((${#pOSITION[@]} - 1))"
+   	 printf "  processing position no.%s of %s\n" "$j" "$((${#pOSITION[@]}))"
    	 $4 --function count -r ${pOSITION[j]} ${sRARunId[i]} 2>>fetch.log >> "$3"/"${sRARunId[i]}".txt
     done
 done
