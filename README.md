@@ -1,4 +1,4 @@
-# SRA_allele_search   
+# SRA_variant_search   
 Search your favorite alleles in your favorite organisms in SRA database   
 
 **Usage:**   
@@ -14,8 +14,20 @@ mkdir working
 cd working
 ```
 Prepare list of accessions of genomes to look for and a list of variants of interest   
-*more on this later*   
 
+An accession list is a text file with one accession number per line. Each accession number refers to a genome in SRA.   
+This file can be obtained from SRA search page:   
+```
+1.Go to https://www.ncbi.nlm.nih.gov/sra/
+2.Search and use filters on the left or advanced search to filter results(search Equus Caballus), click genome, DNA and aligned data on left
+3.On the top right corner of the result list page, click on “Send to”, choose File -> RunInfo, download. An SraRunInfo.csv file should be downloaded.
+```
+A variant list is a text file with one variant per line. Variant should be in the following format:
+```
+chr:start-end
+```
+
+See sample files *Position.csv* and *SraRunInfo.csv* for formatting.
 
 Run with matching breeds at end:
 ```
