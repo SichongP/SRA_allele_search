@@ -35,11 +35,11 @@ else:
 if a.f:
 #If a list of loci is provided
 	call = wd + "/bin/SRA_Get_pileup_list"
-	subprocess.call([call, a.a, a.f, a.temp, sra])
+#	subprocess.call([call, a.a, a.f, a.temp, sra])
 elif a.r:
 #If a list is not provided but a region is provided
 	call = wd + "/bin/SRA_Get_pileup"
-	subprocess.call([call, a.a, a.r, a.temp, sra])
+#	subprocess.call([call, a.a, a.r, a.temp, sra])
 else:
 #Neither a list or a region is provided, report error and exit
 	print("Error! Either a region or a list of regions must be provided! Want whole genomoe data? Simply download their fastq files using fastq-dump from sra tools")
@@ -69,6 +69,8 @@ for identifier in dict:
 	for file in file_list:
 		if file in dict[identifier]:
 			out.write(',' + dict[identifier][file])
+		else:
+			out.write(',')
 	out.write('\n')
 if a.breeds:
 	match_breeds.match_breeds(dict, a.b, a.out + "_breeds.csv")
