@@ -9,7 +9,7 @@ readarray -t pOSITION < <(cut -d, -f1 $2)
     for ((j=1;j<${#pOSITION[@]};j++)); do
    	 #printf "%s\n" "${pOSITION[j]}”
    	 printf "  processing position no.%s of %s\n" "$j" "$((${#pOSITION[@]} - 1))"
-   	 parallel --link -j $5 $4 --function count -r ${pOSITION[j]} {} 2>>fetch.log >> "$3"/{}.txt ::: ${sRARunId[@]} ::: ${sRARunId[@]}
+   	 parallel --keep-order --link -j $5 $4 --function count -r ${pOSITION[j]} {1} 2">>"fetch.log ">>" "$3"/{2}.txt ::: ${sRARunId[@]} ::: ${sRARunId[@]}
     done
 #done
 echo "Read complete."
