@@ -76,12 +76,13 @@ def read_file(root, filename, varianthash, refhash):
 	return varianthash
 def main():
 	varianthash={}
-	start_dir = './temp_pileup_2018-06-27'
+	refs={}
+	start_dir = './temp_pileup_2018-07-02'
 	print('Starting in:', os.path.abspath(start_dir))
 	for root, dirs, files in os.walk(start_dir):
 		for filename in files:
-#			print(filename)
-			read_file(root, filename, varianthash)
+			print(filename)
+			read_file(root, filename, varianthash, refs)
 	print(varianthash)
 
 if __name__ == "__main__":

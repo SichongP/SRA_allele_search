@@ -5,6 +5,9 @@ readarray -t sRARunId < <(cut -d, -f1 $1)
 for ((i=1;i<${#sRARunId[@]};i++)); do
     #printf "%s\n" "${sRARunId[i]}"
 #    >${sRARunId[i]}.txt
+	if [[ ${sRARunId[i]} == "" ]]; then
+		continue
+	fi
     printf "processing sample no.%s of %s\n" "$i" "$((${#sRARunId[@]} - 1))"
 #    for ((j=1;j<${#pOSITION[@]};j++)); do
    	 #printf "%s\n" "${pOSITION[j]}”
