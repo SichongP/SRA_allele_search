@@ -21,6 +21,16 @@ def read_file(root, filename, varianthash, refhash):
 	"""
 	read data from a file and store into a hash
 	"""
+	genebank_ids = {}
+	refseq_ids = {}
+	for line in open("chr_equcab2"):
+		chr, genebank, refseq = line.strip().split('\t',3)
+		genebank_ids[genebank] = chr
+		refseq_ids[refseq] = chr
+	for line in open("chr_equcab3"):
+		chr, genebank, refseq = line.strip().split('\t',3)
+		genebank_ids[genebank] = chr
+		refseq_ids[refseq] = chr
 	for line in open(os.path.join(root, filename)):
 		print(line)
 		chr, pos, ref, depth, match, a, c, g, t, ins, dele, something = line.strip().split('\t',11)
@@ -28,7 +38,12 @@ def read_file(root, filename, varianthash, refhash):
 		c=re.sub('-C','',c)
 		g=re.sub('-G','',g)
 		t=re.sub('-T','',t)
-		identifier=chr+','+pos
+		if chr in geneban_ids:
+			identifier=genebank_ids[chr]+','+pos
+		elif chr in refseq_ids:
+			identifier=refseq_ids[chr]+','+pos
+		else:
+			identifier=chr+','+pos
 		refhash[identifier] = ref
 		if identifier not in varianthash:
 			varianthash[identifier] = {}
