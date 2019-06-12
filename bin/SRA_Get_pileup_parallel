@@ -1,0 +1,18 @@
+#!/bin/bash
+#Get Sequnece data at given variants from SRA database
+readarray -t sRARunId < <(cut -d, -f1 $1)
+#readarray -t pOSITION < <(cut -d, -f1 $2)
+#for ((i=1;i<${#sRARunId[@]};i++)); do
+    #printf "%s\n" "${sRARunId[i]}"
+#    >${sRARunId[i]}.txt
+	if [[ ${sRARunId[i]} == "" ]]; then
+		continue
+	fi
+#    printf "processing sample no.%s of %s\n" "$i" "$((${#sRARunId[@]} - 1))"
+#    for ((j=1;j<${#pOSITION[@]};j++)); do
+   	 #printf "%s\n" "${pOSITION[j]}”
+#   	 printf "  processing position no.%s of %s\n" "$j" "$((${#pOSITION[@]}))"
+   	 parallel -j $5 --link $4 --function count -r $2 {} 2>>fetch.log >> "$3"/{}.txt ::: ${sRARunId[@]} ::: ${sRARunId[@]}
+#    done
+#done
+echo "Read complete."

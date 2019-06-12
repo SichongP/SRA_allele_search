@@ -17,18 +17,36 @@ import os, os.path
 import sys, traceback
 import csv
 import re
+import pprint
 def read_file(root, filename, varianthash, refhash):
 	"""
 	read data from a file and store into a hash
 	"""
+	genebank_ids = {}
+	refseq_ids = {}
+	for line in open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"chr_equcab2")):
+		chr, genebank, refseq = line.strip().split('\t',3)
+		genebank_ids[genebank] = chr
+		refseq_ids[refseq] = chr
+	for line in open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"chr_equcab3")):
+		chr, genebank, refseq = line.strip().split('\t',3)
+		genebank_ids[genebank] = chr
+		refseq_ids[refseq] = chr
+#	print(genebank_ids)
 	for line in open(os.path.join(root, filename)):
-		print(line)
+#		print(line)
 		chr, pos, ref, depth, match, a, c, g, t, ins, dele, something = line.strip().split('\t',11)
 		a=re.sub('-A','',a)
 		c=re.sub('-C','',c)
 		g=re.sub('-G','',g)
 		t=re.sub('-T','',t)
-		identifier=chr+','+pos
+		if chr in genebank_ids:
+			identifier=genebank_ids[chr]+','+pos
+		elif chr in refseq_ids:
+			identifier=refseq_ids[chr]+','+pos
+		else:
+			identifier=chr+','+pos
+#		print(identifier)
 		refhash[identifier] = ref
 		if identifier not in varianthash:
 			varianthash[identifier] = {}
@@ -76,29 +94,13 @@ def read_file(root, filename, varianthash, refhash):
 	return varianthash
 def main():
 	varianthash={}
-	start_dir = sys.argv[1]
+	refs={}
+	start_dir = './temp_pileup_2018-06-27'
 	print('Starting in:', os.path.abspath(start_dir))
 	for root, dirs, files in os.walk(start_dir):
 		for filename in files:
 #			print(filename)
-			read_file(root, filename, varianthash)
-	#print(varianthash)
-	try:
-		out = open(a.out + ".csv", 'w')
-	except IOError as e:
-		if e.errno == errno.EACCES:
-			print("Error: Permission denied when trying to write to output")
-			exit(1)
-		raise Exception("Failed to open file")
-	out.write('chr,pos,ref,' + ','.join(file_list) + '\n')
-	for identifier in dict:
-		out.write(identifier + ',' + refs[identifier])
-		for file in file_list:
-			if file in dict[identifier]:
-				out.write(',' + dict[identifier][file])
-			else:
-				out.write(',')
-	out.write('\n')
-	match_breeds(dict, a.b, a.out + "_breeds.csv")
+			read_file(root, filename, varianthash, refs)
+	pprint.pprint(varianthash)
 if __name__ == "__main__":
 	main()
