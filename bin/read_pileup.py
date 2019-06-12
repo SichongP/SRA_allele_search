@@ -76,13 +76,29 @@ def read_file(root, filename, varianthash, refhash):
 	return varianthash
 def main():
 	varianthash={}
-	start_dir = './temp_pileup_2018-06-27'
+	start_dir = sys.argv[1]
 	print('Starting in:', os.path.abspath(start_dir))
 	for root, dirs, files in os.walk(start_dir):
 		for filename in files:
 #			print(filename)
 			read_file(root, filename, varianthash)
-	print(varianthash)
-
+	#print(varianthash)
+	try:
+		out = open(a.out + ".csv", 'w')
+	except IOError as e:
+		if e.errno == errno.EACCES:
+			print("Error: Permission denied when trying to write to output")
+			exit(1)
+		raise Exception("Failed to open file")
+	out.write('chr,pos,ref,' + ','.join(file_list) + '\n')
+	for identifier in dict:
+		out.write(identifier + ',' + refs[identifier])
+		for file in file_list:
+			if file in dict[identifier]:
+				out.write(',' + dict[identifier][file])
+			else:
+				out.write(',')
+	out.write('\n')
+	match_breeds(dict, a.b, a.out + "_breeds.csv")
 if __name__ == "__main__":
 	main()
