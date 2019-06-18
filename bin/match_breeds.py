@@ -12,7 +12,7 @@ def open_file(filename):
 		with fp:
 			return fp.readlines()
 def match_breeds(varianthash, breeds, output):
-#breeds is a file containing a list of samples and their breeds in a tab-delimited fashion
+#breeds is a file containing a list of samples and their breeds in a csv format
 #Read breeds file
 	breedhash = {}
 	try:
@@ -23,6 +23,7 @@ def match_breeds(varianthash, breeds, output):
 			exit(1)
 		raise Exception("Failed to open file")
 	out.write('chr,pos,breeds\n')
+	breedCount={}
 	for line in open_file(breeds):
 		if line.isspace():
 			continue
@@ -35,5 +36,10 @@ def match_breeds(varianthash, breeds, output):
 		for file in varianthash[identifier]:
 			if not varianthash[identifier][file] == ".":
 				if file in breedhash:
-					b.append(breedhash[file])
-		out.write(',' + ';'.join(b) + '\n')
+					if breedhash[file] not in breedCount:
+						breedCount[breedhash[file]] = 1
+						b.append(breedhash[file]) 
+					else:
+						breedCount[breedhash[file]]+=1
+		for breed in b:
+			out.write(',' + breed + ',' + breedCount[breed])
