@@ -26,7 +26,7 @@ def match_breeds(varianthash, breeds, output):
 	for line in open_file(breeds):
 		if line.isspace():
 			continue
-		sample, breed = line.strip().split('\t')
+		sample, breed = line.strip().split(',')
 		file = sample + ".txt"
 		breedhash[file] = breed
 	for identifier in varianthash:
