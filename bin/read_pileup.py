@@ -18,7 +18,7 @@ import sys, traceback
 import csv
 import re
 import pprint
-def read_file(root, filename, varianthash, refhash):
+def read_file(root, filename, varianthash, refhash, min_depth):
 	"""
 	read data from a file and store into a hash
 	"""
@@ -54,6 +54,9 @@ def read_file(root, filename, varianthash, refhash):
 			if filename in varianthash[identifier]:
 				print("encountered duplicate files: ", identifier)
 				sys.exit(0)
+			if int(depth) < int(min_depth):
+				varianthash[identifier][filename] = ""
+				continue
 			if match:
 				alt_ratio = 1-float(match)/float(depth)
 			else:
@@ -101,6 +104,6 @@ def main():
 		for filename in files:
 #			print(filename)
 			read_file(root, filename, varianthash, refs)
-	pprint.pprint(varianthash)
+#	pprint.pprint(varianthash)
 if __name__ == "__main__":
 	main()
