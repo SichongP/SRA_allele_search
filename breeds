@@ -1,187 +1,397 @@
-ERR1527947,Akhal-Teke
-ERR1527948,Akhal-Teke
-ERR1527949,Akhal-Teke
-ERR1527950,Akhal-Teke
-ERR1527951,Arabian
-ERR1527952,Franches-Montagnes
-ERR1527953,Franches-Montagnes
-ERR1527954,Franches-Montagnes
-ERR1527955,Franches-Montagnes
-ERR1527956,Franches-Montagnes
-ERR1527957,Franches-Montagnes
-ERR1527958,Franches-Montagnes
-ERR1527959,Franches-Montagnes
-ERR1527960,Franches-Montagnes
-ERR1527961,Franches-Montagnes
-ERR1527962,Franches-Montagnes
-ERR1527963,Franches-Montagnes
-ERR1527964,Franches-Montagnes
-ERR1527965,Franches-Montagnes
-ERR1527966,Haflinger
-ERR1527967,Dutch Warmblood
-ERR1527968,Quarter Horse
-ERR1527969,Quarter Horse
-ERR1527970,Quarter Horse
-ERR1527971,Franches-Montagnes
-ERR1527972,Swiss Warmblood
 ERR1545178,German WarmBlood
-ERR1545179,German WarmBlood
-ERR1545180,German WarmBlood
-ERR1545181,German WarmBlood
-SRR3900345,Shetland Pony
-SRR3900342,Shetland Pony
-SRR3900348,Shetland Pony
-SRR3900349,Shetland Pony
-SRR3900350,Shetland Pony
-SRR3900351,Shetland Pony
-SRR3900352,Shetland Pony
-SRR3900353,Shetland Pony
-SRR3900346,Shetland Pony
-SRR3900347,Shetland Pony
-SRR3900343,Shetland Pony
-SRR3900344,Shetland Pony
-ERR1545182,German WarmBlood
-ERR1545183,German WarmBlood
-ERR1545184,German WarmBlood
-ERR1545185,German WarmBlood
-ERR1545186,German WarmBlood
-ERR1545187,German WarmBlood
-ERR1545190,German WarmBlood
-ERR1545188,German WarmBlood
-ERR1545189,German WarmBlood
-ERR1735862,Thoroughbred 
-SRR5755256,Italian Trotter
-ERR2179540,Franches-Montagnes
-ERR2179541,Franches-Montagnes
-ERR2179542,German Riding Pony
-ERR2179543,Welsh Pony
-ERR2179544,Arabian
-ERR2179545,German Riding Pony
-ERR2179546,Morgan Horse
-ERR2179547,Holsteiner
-ERR2179548,Oldenburg Horse
-ERR2179549,Hannoveraner
-ERR2179550,Welsh Pony
-ERR2179551,Arabian
-ERR2179552,Noriker
-ERR2179553,Haflinger
-ERR2179554,Haflinger
-ERR2179555,Haflinger
-ERR2179556,Swiss Warmblood
-ERR2203766,Trakehner
-ERR3143083,unknown
-ERR3143089,unknown
-ERR3143095,unknown
-ERR3143101,unknown
-ERR3143102,unknown
-ERR3143096,unknown
-ERR3143108,unknown
-ERR3143090,unknown
-ERR3143084,unknown
-ERR3143085,unknown
-ERR3143091,unknown
-ERR3143109,unknown
-ERR3143097,unknown
-ERR3143103,unknown
-ERR3143104,unknown
-ERR3143098,unknown
-ERR3143110,unknown
-ERR3143092,unknown
-ERR3143086,unknown
-ERR3143087,unknown
-ERR3143093,unknown
-ERR3143111,unknown
-ERR3143099,unknown
-ERR3143105,unknown
-ERR3143100,unknown
-ERR3143112,unknown
-ERR3143094,unknown
-ERR3143088,unknown
-ERR3317814,unknown
-ERR1021816,Yakutian Horse
-ERR1021817,Yakutian Horse
-ERR1021818,Yakutian Horse
-ERR1021819,Yakutian Horse
-ERR1021820,Yakutian Horse
-ERR1021821,Yakutian Horse
-ERR1021822,Yakutian Horse
-ERR1021823,Yakutian Horse
-ERR1021824,Yakutian Horse
-ERR1034545,Ancient horse from Yakutia
-ERR1305961,unknown
-ERR1305962,unknown
-ERR1305963,unknown
-ERR1305964,unknown
-ERR1306526,unknown
-ERR1397959,Friesian Dwarf
-ERR1397960,Friesian Dwarf
-ERR1397961,Friesian Dwarf
-ERR1397962,Friesian Dwarf
-ERR1397963,Friesian Dwarf
-ERR1397964,Friesian Dwarf
-ERR1397965,Friesian Dwarf
-ERR1512897,Standardbred
-ERR466186,Franches-Montagnes
-ERR863167,Icelandic Horse
-ERR868003,Shetland Pony
-ERR868004,Shetland Pony
-ERR793393,Icelandic Horse
-ERR979793,Franches-Montagnes
-ERR979796,Domesticated horses
-ERR979801,Domesticated horses
-ERR979803,Domesticated horses
-ERR979799,Domesticated horses
-ERR979795,Franches-Montagnes
-ERR979794,Franches-Montagnes
-ERR979790,Franches-Montagnes
-ERR979785,Franches-Montagnes
-ERR979798,Domesticated horses
-ERR979800,Domesticated horses
+ERR1527961,Franches-Montagnes
 ERR979789,Franches-Montagnes
-ERR979788,Franches-Montagnes
-ERR979802,Domesticated horses
-ERR979797,Domesticated horses
-ERR982704,KB7754
-ERR979791,Franches-Montagnes
-ERR979784,Franches-Montagnes
+ERR3225526,Ancient Horse -  France
+ERR3225631,Ancient Horse – UK
+ERR1527966,Haflinger
+ERR3225479,Ancient Horse -  Kazakhstan
+ERR3225521,Ancient Horse -  Spain
+ERR3225636,Ancient Horse -  Turkey
+ERR2112716,Ancient Horse -  Kazakhstan
+ERR2027932,Curly
+ERR1527968,Quarter Horse
+ERR3225477,Ancient Horse -  Kazakhstan
+ERR2112764,Ancient Horse -  Kazakhstan
+ERR982704,Mongolian
+ERR3225638,Ancient Horse -  Turkey
+ERR2112718,Ancient Horse -  Kazakhstan
+ERR3225553,Ancient Horse -  Germany
+ERR3225582,Ancient Horse -  Iran
+ERR3225644,Ancient Horse -  Turkey
+ERR3225554,Ancient Horse -  Lithuania
+ERR3225585,Ancient Horse -  France
+ERR3225643,Ancient Horse -  Turkey
 ERR979787,Franches-Montagnes
+ERR3225470,Ancient Horse -  Kazakhstan
+ERR2112763,Ancient Horse -  Russia
+ERR3225528,Ancient Horse -  France
+ERR3225561,Ancient Horse -  Lithuania
+ERR3225494,Ancient Horse -  France
+ERR2112787,Ancient Horse -  Romania
+ERR979801,Standardbred
+ERR2731061,Holsteiner
+ERR3225493,Ancient Horse -  Switzerland
+ERR2112780,Ancient Horse -  Kazakhstan
+ERR3225671,Ancient Horse -  Iran
+ERR3225566,Ancient Horse -  NA
+ERR1527953,Franches-Montagnes
+ERR3225603,Ancient Horse -  Iran
+ERR3225514,Ancient Horse -  France
+ERR2179555,Haflinger
+ERR3225568,Ancient Horse -  France
+ERR2179552,Noriker
+ERR1527954,Franches-Montagnes
+ERR3225604,Ancient Horse -  Iran
+ERR2112789,Ancient Horse -  Kazakhstan
+ERR3225513,Ancient Horse -  France
+ERR793393,Icelandic Horse
+ERR1735862,Thoroughbred
+ERR3225669,Ancient Horse -  Kazakhstan
+ERR2179543,Welsh Pony
+ERR3225502,Ancient Horse -  France
+ERR3225615,Ancient Horse -  Mongolia
+ERR2112798,Ancient Horse -  Kazakhstan
+ERR3225505,Ancient Horse -  France
+ERR3225612,Ancient Horse -  Iran
+ERR3225579,Ancient Horse – Estonia
+ERR1397959,Friesian Dwarf
+ERR1021819,Yakutian Horse
+ERR2179544,Arabian
+ERR982720,Przewalski X Standardbred
+ERR2112791,Ancient Horse – Estonia
+ERR3225482,Ancient Horse -  Kyrgyzstan
+ERR3225453,Ancient Horse -  France
+ERR1305964,American Paint Horse
+ERR3225577,Ancient Horse -  Russia
+ERR1021817,Yakutian Horse
+ERR1545184,German WarmBlood
+ERR3225570,Ancient Horse -  Croatia
+ERR3225667,Ancient Horse -  Kazakhstan
+ERR3628171,unknown
+ERR1545183,German WarmBlood
+ERR2112796,Ancient Horse -  Mongolia
+ERR3225485,Ancient Horse – UK
+ERR1305963,American Paint Horse
+ERR3225454,Ancient Horse -  Russia
+ERR3225594,Ancient Horse -  Russia
+ERR3225652,Ancient Horse -  Turkey
+ERR1397965,Friesian Dwarf
+ERR3225545,Ancient Horse -  Russia
+ERR982712,Przewalski
+ERR2112772,Ancient Horse -  Kazakhstan
+ERR3225539,Ancient Horse -  Belgium
+ERR979796,unknown
+ERR3225461,Ancient Horse -  Switzerland
+ERR3225629,Ancient Horse -  UK
+ERR982715,Przewalski
+ERR2112775,Ancient Horse -  Kazakhstan
+ERR979791,Franches-Montagnes
+ERR3225466,Ancient Horse -  France
+ERR1021822,Yakutian Horse
+ERR3225593,Ancient Horse -  Iran
+ERR3225655,Ancient Horse -  Turkey
+ERR1397962,Friesian Dwarf
+ERR3225542,Ancient Horse -  Kazakhstan
+ERR3225627,Ancient Horse -  UK
+ERR3225530,Ancient Horse -  Germany
+ERR3225468,Ancient Horse -  Iran
+ERR3225620,Ancient Horse -  Mongolia
+ERR3225537,Ancient Horse -  Belgium
+ERR979798,Quart Horse
+ERR1527970,Quarter Horse
+ERR2179553,Haflinger
+ERR1527955,Franches-Montagnes
+ERR3225605,Ancient Horse -  Iran
+ERR2112788,Ancient Horse -  Mongolia
+ERR3225512,Ancient Horse -  France
+ERR1527952,Franches-Montagnes
+ERR3225602,Ancient Horse -  Mongolia
+ERR3225515,Ancient Horse -  France
+ERR2179554,Haflinger
+ERR3225569,Ancient Horse -  Croatia
+ERR979800,Quart Horse
+ERR3225492,Ancient Horse -  Spain
+ERR2112781,Ancient Horse -  Kazakhstan
+ERR3225670,Ancient Horse -  France
+ERR3225567,Ancient Horse -  NA
+ERR3225560,Ancient Horse -  Lithuania
+ERR3225495,Ancient Horse -  France
+ERR2112786,Ancient Horse -  France
+ERR3225555,Ancient Horse -  Lithuania
+ERR3225584,Ancient Horse -  France
+ERR3225642,Ancient Horse -  Turkey
 ERR979786,Franches-Montagnes
+ERR3225471,Ancient Horse -  Iceland
+ERR3225529,Ancient Horse -  China
+ERR2731055,American Paint Horse
+ERR1527969,Quarter Horse
+ERR3225476,Ancient Horse -  Kazakhstan
+ERR2112765,Ancient Horse -  Kazakhstan
+ERR3225639,Ancient Horse -  Turkey
+ERR982705,Przewalski
+ERR3225552,Ancient Horse -  France
+ERR2112719,Ancient Horse -  Kazakhstan
+ERR3225583,Ancient Horse -  France
+ERR3225645,Ancient Horse -  Turkey
+ERR1527967,Dutch Warmblood
+ERR3225478,Ancient Horse -  Kazakhstan
+ERR3225520,Ancient Horse -  Russia
+ERR3225637,Ancient Horse -  Turkey
+ERR2112717,Ancient Horse -  Kazakhstan
+ERR1545179,German WarmBlood
+ERR1527960,Franches-Montagnes
+ERR979788,Franches-Montagnes
+ERR3225527,Ancient Horse -  France
+ERR3225630,Ancient Horse -  UK
+ERR3225621,Ancient Horse -  Mongolia
+ERR3225536,Ancient Horse -  Belgium
+ERR979799,Quart Horse
+ERR1527971,Franches-Montagnes
+ERR3225626,Ancient Horse -  Spain
+ERR3225531,Ancient Horse -  Mongolia
+ERR3225469,Ancient Horse -  Kazakhstan
+ERR982714,Przewalski
+ERR3225628,Ancient Horse -  UK
+ERR2112774,Ancient Horse -  Kazakhstan
+ERR979790,Franches-Montagnes
+ERR3225467,Ancient Horse -  France
+ERR1021823,Yakutian Horse
+ERR3225592,Ancient Horse -  Slovakia
+ERR3225654,Ancient Horse -  Turkey
+ERR1397963,Friesian Dwarf
+ERR3225543,Ancient Horse -  Mongolia
+ERR3225595,Ancient Horse -  Russia
+ERR1021824,Yakutian Horse
+ERR3225653,Ancient Horse -  Turkey
+ERR1397964,Friesian Dwarf
+ERR3225544,Ancient Horse -  Mongolia
+ERR982713,Przewalski x Domesticated F1 hybrid
+ERR3225538,Ancient Horse -  Belgium
+ERR2112773,Ancient Horse -  Kazakhstan 
+ERR979797,Quart Horse
+ERR3225460,Ancient Horse -  Switzerland
+ERR3225571,Ancient Horse -  Russia
+ERR3225666,Ancient Horse -  Kazakhstan
+ERR1545182,German WarmBlood
+ERR466186,Franches-Montagnes
+ERR2112797,Ancient Horse -  Turkey
+ERR3225484,Ancient Horse -  UK
+ERR3225455,Ancient Horse -  Russia
+ERR1305962,American Paint Horse
+ERR982721,Przewalski Holotype
+ERR2112790,Ancient Horse -  Germany
+ERR3225483,Ancient Horse -  Kyrgyzstan
+ERR3225452,Ancient Horse -  France
+ERR3225576,Ancient Horse -  Kazakhstan 
+ERR1306526,UK Warmblood (>50% Quarter Horse)
+ERR3225661,Ancient Horse -  Turkey
+ERR1021816,Yakutian Horse
+ERR1545185,German WarmBlood
+ERR3225504,Ancient Horse -  France
+ERR3225613,Ancient Horse -  Sweden
+ERR3225578,Ancient Horse -  UK
+ERR1021818,Yakutian Horse
+ERR2179545,German Riding Pony
+ERR3225668,Ancient Horse -  Kazakhstan 
+ERR2179542,German Riding Pony
+ERR3225503,Ancient Horse -  France
+ERR3225614,Ancient Horse -  Mongolia
+ERR982719,Przewalski
+ERR3225625,Ancient Horse -  France
+ERR3225532,Ancient Horse -  Mongolia
+ERR2112779,Ancient Horse -  Kazakhstan 
+ERR3225659,Ancient Horse -  Turkey
+ERR3225598,Ancient Horse -  Switzerland
+ERR3225549,Ancient Horse -  Iran
+ERR3225622,Ancient Horse -  Mongolia
+ERR3225535,Ancient Horse -  Mongolia
+ERR1527972,Swiss Warmblood
+ERR3225650,Ancient Horse -  Turkey
+ERR3225596,Ancient Horse -  Switzerland
+ERR3225547,Ancient Horse -  Russia
+ERR982710,Przewalski
+ERR2112770,Ancient Horse -  Kazakhstan 
+ERR3225463,Ancient Horse -  Russia
+ERR979794,Franches-Montagnes
+ERR982717,Przewalski
+ERR2112777,Ancient Horse -  Kazakhstan 
+ERR3225464,Ancient Horse -  Croatia
+ERR979793,Franches-Montagnes
+ERR3225657,Ancient Horse -  Turkey
+ERR3225591,Ancient Horse -  Germany
+ERR1021820,Yakutian Horse
+ERR3225540,Ancient Horse -  Iceland
+ERR1397960,Friesian Dwarf
+ERR3225509,Ancient Horse -  France
+ERR2112793,Ancient Horse -  Mongolia
+ERR3225480,Ancient Horse -  Kazakhstan 
+ERR3225451,Ancient Horse -  France
+ERR3225575,Ancient Horse -  Estonia
+ERR3225662,Ancient Horse -  Turkey
+ERR3628174,Franches-Montagnes
+ERR1545186,German WarmBlood
+ERR2179548,Oldenburg Horse
+ERR3225572,Ancient Horse -  Russia
+ERR3225665,Ancient Horse -  Uzbekistan
+ERR3628173,unknown
+ERR1545181,German WarmBlood
+ERR2112794,Ancient Horse -  Georgia
+ERR3225619,Ancient Horse -  Mongolia
+ERR1527949,Akhal-Teke
+ERR3225487,Ancient Horse -  UK
+ERR3225456,Ancient Horse -  Russia
+ERR1305961,UK Warmblood (>50% Quarter Horse)
+ERR2179541,Franches-Montagnes
+ERR3225500,Ancient Horse -  France
+ERR3225617,Ancient Horse -  Mongolia
+ERR3225489,Ancient Horse -  Spain
+ERR1527947,Akhal-Teke
+ERR3225458,Ancient Horse -  Russia
+ERR3225507,Ancient Horse -  France
+ERR3225610,Ancient Horse -  Iran
+ERR2179546,Morgan Horse
+ERR1545188,German WarmBlood
+ERR1527951,Arabian
+ERR3225601,Ancient Horse -  Mongolia
+ERR3225516,Ancient Horse -  France
+ERR2179550,Welsh Pony
+ERR3225449,Ancient Horse -  France
+ERR3225498,Ancient Horse -  France
+ERR1527956,Franches-Montagnes
+ERR3225606,Ancient Horse -  Iran
+ERR3225511,Ancient Horse -  France
+ERR1545190,German WarmBlood
+ERR3225563,Ancient Horse -  Russia
+ERR1527958,Franches-Montagnes
+ERR3225496,Ancient Horse -  France
+ERR2112785,Ancient Horse -  Hungary
+ERR3225608,Ancient Horse -  Iran
+ERR979803,Standardbred
+ERR3225491,Ancient Horse -  France
+ERR2112782,Ancient Horse -  Kazakhstan 
+ERR3225518,Ancient Horse -  Georgia
+ERR3225564,Ancient Horse -  France
+ERR863167,Icelandic Horse
+ERR2731056,Shetland Pony
+ERR3225475,Ancient Horse -  Kazakhstan 
+ERR2112766,Ancient Horse -  Kazakhstan 
+ERR982706,Przewalski
+ERR3225551,Ancient Horse -  France
+ERR3225646,Ancient Horse -  Turkey
+ERR3225580,Ancient Horse -  Estonia
+ERR3225556,Ancient Horse -  Lithuania
+ERR3225641,Ancient Horse -  Turkey
+ERR3225587,Ancient Horse -  France
+ERR3225472,Ancient Horse -  France
+ERR979785,Franches-Montagnes
+ERR3225558,Ancient Horse -  Lithuania
+ERR3225589,Ancient Horse -  Portugal
+ERR1527963,Franches-Montagnes
+ERR3225524,Ancient Horse -  France
+ERR3225633,Ancient Horse -  UK
+ERR1527964,Franches-Montagnes
+ERR3225523,Ancient Horse -  Spain
+ERR2112768,Ancient Horse -  Kazakhstan 
+ERR3225634,Ancient Horse -  Turkey
+ERR982708,Przewalski
+ERR3225648,Ancient Horse -  Turkey
+ERR3225506,Ancient Horse -  France
+ERR3225611,Ancient Horse -  Iran
+ERR868004,Shetland Pony
+ERR1545189,German WarmBlood
+ERR2179547,Holsteiner
+ERR868003,Shetland Pony
+ERR2179540,Franches-Montagnes
+ERR3225501,Ancient Horse -  France
+ERR3225616,Ancient Horse -  Mongolia
+ERR3225488,Ancient Horse -  Poland
+ERR3225459,Ancient Horse -  Russia
+ERR3225573,Ancient Horse -  Mongolia
+ERR3225664,Ancient Horse -  Turkey
+ERR1545180,German WarmBlood
+ERR2112795,Ancient Horse -  Mongolia
+ERR3225618,Ancient Horse -  Mongolia
+ERR3225486,Ancient Horse -  UK
+ERR1527948,Akhal-Teke
+ERR3225457,Ancient Horse -  Russia
+ERR3225508,Ancient Horse -  France
+ERR2112792,Ancient Horse -  Iran
+ERR3225481,Ancient Horse -  France
+ERR3225450,Ancient Horse -  France
+ERR3225574,Ancient Horse -  Mongolia
+ERR3225663,Ancient Horse -  Turkey
+ERR2179549,Hannoveraner
+ERR1545187,German WarmBlood
+ERR982716,Przewalski
+ERR2112776,Ancient Horse -  Kazakhstan 
+ERR3225465,Ancient Horse -  Russia
 ERR979792,Franches-Montagnes
-SRR3045342,Standardbred Horses
-SRR3045676,Standardbred Horses
-SRR3045847,Standardbred Horses
-SRR3045848,Standardbred Horses
-SRR3046827,Standardbred Horses
-SRR3046831,Standardbred Horses
-SRR3046832,Standardbred Horses
-SRR3046833,Standardbred Horses
-SRR3046834,Standardbred Horses
-SRR3050542,Standardbred Horses
-SRR3050543,Standardbred Horses
-SRR3050544,Standardbred Horses
-SRR3050545,Standardbred Horses
-SRR3050546,Standardbred Horses
-SRR3050547,Standardbred Horses
-SRR3050548,Standardbred Horses
-SRR3050549,Standardbred Horses
-SRR3050550,Standardbred Horses
-SRR3900279,Shetland Pony
-SRR3900280,Shetland Pony
-SRR3900298,Shetland Pony
-SRR3900283,Shetland Pony
-SRR3900284,Shetland Pony
-SRR3900285,Shetland Pony
-SRR3900286,Shetland Pony
-SRR3900287,Shetland Pony
-SRR3900288,Shetland Pony
-SRR3900289,Shetland Pony
-SRR3900290,Shetland Pony
-SRR3900315,Shetland Pony
-SRR3900336,Shetland Pony
-SRR3900337,Shetland Pony
-SRR3900338,Shetland Pony
-SRR3900339,Shetland Pony
-SRR3900340,Shetland Pony
-SRR3900341,Shetland Pony
-SRR3900281,Shetland Pony
-SRR3900282,Shetland Pony
+ERR3225656,Ancient Horse -  Turkey
+ERR3225590,Ancient Horse -  Russia
+ERR1021821,Yakutian Horse
+ERR3225541,Ancient Horse -  Kazakhstan 
+ERR1397961,Friesian Dwarf
+ERR3225651,Ancient Horse -  Turkey
+ERR3225597,Ancient Horse -  Switzerland
+ERR3225546,Ancient Horse -  Russia
+ERR982711,Przewalski Paratype
+ERR2112771,Ancient Horse -  Kazakhstan 
+ERR3225462,Ancient Horse -  Switzerland
+ERR979795,Franches-Montagnes
+ERR3225599,Ancient Horse -  Mongolia
+ERR3225548,Ancient Horse -  Russia
+ERR3225623,Ancient Horse -  Mongolia
+ERR3225534,Ancient Horse -  Mongolia
+ERR3225624,Ancient Horse -  Mongolia
+ERR982718,Przewalski
+ERR1512897,Standardbred
+ERR2112778,Ancient Horse -  Kazakhstan 
+ERR3225533,Ancient Horse -  Mongolia
+ERR3225658,Ancient Horse -  Turkey
+ERR1527965,Franches-Montagnes
+ERR2112769,Ancient Horse -  Kazakhstan 
+ERR3225522,Ancient Horse -  Spain
+ERR982709,Przewalski
+ERR3225635,Ancient Horse -  Turkey
+ERR2027931,Curly
+ERR2112715,Ancient Horse -  France
+ERR3225649,Ancient Horse -  Turkey
+ERR3225559,Ancient Horse -  Lithuania
+ERR3225588,Ancient Horse -  France
+ERR1527962,Franches-Montagnes
+ERR3225525,Ancient Horse -  France
+ERR3225632,Ancient Horse -  UK
+ERR3225557,Ancient Horse -  Lithuania
+ERR3225640,Ancient Horse -  Turkey
+ERR3225586,Ancient Horse -  France
+ERR3225473,Ancient Horse -  Kazakhstan 
+ERR979784,Franches-Montagnes
+ERR2731057,Icelandic Horse
+ERR3225474,Ancient Horse -  Kazakhstan 
+ERR2112767,Ancient Horse -  Kazakhstan 
+ERR3317814,German Riding Pony
+ERR982707,Polish warmblood
+ERR3225550,Ancient Horse -  Russia
+ERR3225647,Ancient Horse -  Turkey
+ERR3225581,Ancient Horse -  Iran
+ERR979802,Standardbred
+ERR3225490,Ancient Horse -  Spain
+ERR2112783,Ancient Horse -  Kazakhstan 
+ERR3225519,Ancient Horse -  Russia
+ERR3225565,Ancient Horse -  Moldova
+ERR3225562,Ancient Horse -  Lithuania
+ERR3225497,Ancient Horse -  France
+ERR1527959,Franches-Montagnes
+ERR2112784,Ancient Horse -  Kazakhstan 
+ERR3225609,Ancient Horse -  Iran
+ERR2179551,Arabian
+ERR1527957,Franches-Montagnes
+ERR3225499,Ancient Horse -  France
+ERR3225607,Ancient Horse -  Iran
+ERR2203766,Trakehner
+ERR3225510,Ancient Horse -  France
+ERR1527950,Akhal-Teke
+ERR3225600,Ancient Horse -  Mongolia
+ERR3225517,Ancient Horse -  France
+ERR2179556,Swiss Warmblood
+ERR2112720,Ancient Horse -  Iran
