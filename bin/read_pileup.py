@@ -35,7 +35,11 @@ def read_file(root, filename, varianthash, refhash, min_depth):
 #	print(genebank_ids)
 	for line in open(os.path.join(root, filename)):
 #		print(line)
-		chr, pos, ref, depth, match, a, c, g, t, ins, dele, something = line.strip().split('\t',11)
+                try:
+		    chr, pos, ref, depth, match, a, c, g, t, ins, dele, something = line.strip().split('\t',11)
+                except:
+                    print("Unexpected error when reading file {}:".format(filename))
+                    print(sys.exc_info()[0])
 		a=re.sub('-A','',a)
 		c=re.sub('-C','',c)
 		g=re.sub('-G','',g)
