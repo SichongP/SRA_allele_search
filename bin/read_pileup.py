@@ -35,11 +35,11 @@ def read_file(root, filename, varianthash, refhash, min_depth):
 #	print(genebank_ids)
 	for line in open(os.path.join(root, filename)):
 #		print(line)
-                try:
-		    chr, pos, ref, depth, match, a, c, g, t, ins, dele, something = line.strip().split('\t',11)
-                except:
-                    print("Unexpected error when reading file {}:".format(filename))
-                    print(sys.exc_info()[0])
+		try:
+			chr, pos, ref, depth, match, a, c, g, t, ins, dele, something = line.strip().split('\t',11)
+		except:
+			print("Unexpected error when reading file {}:".format(filename))
+			print(sys.exc_info()[0])
 		a=re.sub('-A','',a)
 		c=re.sub('-C','',c)
 		g=re.sub('-G','',g)
@@ -56,8 +56,8 @@ def read_file(root, filename, varianthash, refhash, min_depth):
 			varianthash[identifier] = {}
 		if identifier in varianthash:
 			if filename in varianthash[identifier]:
-				print("encountered duplicate files: ", identifier)
-				sys.exit(0)
+				print("encountered duplicate files: {} in {}".format(identifier, filename))
+				continue
 			if int(depth) < int(min_depth):
 				varianthash[identifier][filename] = ""
 				continue
@@ -102,12 +102,13 @@ def read_file(root, filename, varianthash, refhash, min_depth):
 def main():
 	varianthash={}
 	refs={}
-	start_dir = './temp_pileup'
+	start_dir = './temp_pileup_2020-08-03'
 	print('Starting in:', os.path.abspath(start_dir))
 	for root, dirs, files in os.walk(start_dir):
 		for filename in files:
 #			print(filename)
-			read_file(root, filename, varianthash, refs)
+			varianthash = read_file(root, filename, varianthash, refs, 10)
+	print(varianthash)
 #	pprint.pprint(varianthash)
 if __name__ == "__main__":
 	main()
