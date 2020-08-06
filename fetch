@@ -67,8 +67,8 @@ for (path, dirnames, files) in os.walk(a.temp):
 		print(file)
 		read_pileup.read_file(path, file, dict, refs, a.N)
 	break
-print(dict)
-print(file_list)
+#print(dict)
+#print(file_list)
 try:
 	out = open(a.out + ".csv", 'w')
 except IOError as e:
