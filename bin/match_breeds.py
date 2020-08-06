@@ -34,7 +34,7 @@ def match_breeds(varianthash, breeds, output):
 		out.write(identifier)
 		b = []
 		for file in varianthash[identifier]:
-			if not varianthash[identifier][file] == ".":
+			if not varianthash[identifier][file] == "." and not varianthash[identifier][file] == "":
 				if file in breedhash:
 					if breedhash[file] not in breedCount:
 						breedCount[breedhash[file]] = 1
